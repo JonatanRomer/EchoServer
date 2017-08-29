@@ -13,7 +13,7 @@ namespace Echo_Client
 
         public void Start()
         {
-            String SendStr = "Jonatan";
+            String SendStr = "Jonatan S. Rømer";
 
             using (TcpClient client = new TcpClient("localhost", 7))
             using (NetworkStream ns = client.GetStream())
@@ -24,6 +24,8 @@ namespace Echo_Client
                 sw.Flush();
 
                 String incomingStr = sr.ReadLine();
+                Console.WriteLine("Jeg har modtaget: " + incomingStr);
+                 incomingStr = sr.ReadLine();
                 Console.WriteLine("Jeg har modtaget: " + incomingStr);
             }
         }

@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace An_Echo_Server
+namespace Echo_Client
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Server server = new Server();
-            server.Start();
+            Client client = new Client();
+            client.Start();
 
             Console.ReadLine();
         }
